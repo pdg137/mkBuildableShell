@@ -25,11 +25,6 @@ mkBuildableShell {
   # Set up some inputs
   buildInputs = [ pkgs.hello pkgs.nodejs pkgs.ruby ];
 
-  # Preserve these variables that come from hooks. I don't know how
-  # to find all the hooks automatically so you have to add any
-  # package-specific environment variables that you care about here.
-  preservedEnvVars = [ "NODE_PATH" "GEM_PATH" ];
-
   # Some code to run when entering the shell. If you don't want to
   # leave the prompt open afterward, add `exit` at the end.
   shellHook = ''

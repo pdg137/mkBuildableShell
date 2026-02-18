@@ -28,6 +28,5 @@ To make it almost like the mkShell environment, it:
 * sets PS1,
 * preserves your PATH,
 * preserves all variables passed to mkBuildableShell, and
-* preserves additional specified environment variables (you should put
-  all important vars configured by your buildInputs, shellHook, etc. in
-  here.)
+* preserves additional specified environment variables
+  configured by your buildInputs, shellHook, etc.
