@@ -26,7 +26,7 @@ To make it almost like the mkShell environment, it:
 
 * uses bashInteractive (for tab completion, etc.),
 * sets PS1,
-* preserves your PATH,
-* preserves all variables passed to mkBuildableShell, and
-* preserves additional specified environment variables
-  configured by your buildInputs, shellHook, etc.
+* appends your PATH to the one configured by buildInputs,
+* provides all variables passed to mkBuildableShell, and
+* provides additional environment variables
+  configured by your buildInputs.
